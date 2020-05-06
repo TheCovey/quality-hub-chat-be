@@ -1,0 +1,36 @@
+{
+  "name": "quality-hub-chat-be",
+  "version": "1.0.0",
+  "description": "Backend for quality hub chat server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCovey/quality-hub-chat-be.git"
+  },
+  "author": "Juliette Antoniou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheCovey/quality-hub-chat-be/issues"
+  },
+  "homepage": "https://github.com/TheCovey/quality-hub-chat-be#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.1",
+    "pg": "^8.0.3",
+    "socket.io": "^2.3.0",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
