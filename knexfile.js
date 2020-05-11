@@ -1,5 +1,6 @@
 // Update with your config settings.
-
+require('dotenv').config()
+const prodConn = process.env.DB_URL
 module.exports = {
 
   development: {
@@ -10,12 +11,9 @@ module.exports = {
   },
 
   staging: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
+    client: 'pg',
+    useNullAsDefault: true,
+    connection: prodConn,
     pool: {
       min: 2,
       max: 10
